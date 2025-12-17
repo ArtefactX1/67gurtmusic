@@ -72,6 +72,7 @@
       "scripts": {
             "dev": "concurrently \"npm run server\" \"vite\"",
             "server": "nodemon server/index.js",
-            "build": "vite build"
+            "build": "vite build",
+            "postinstall": "chmod +x node_modules/.bin/vite"
       }
 }
